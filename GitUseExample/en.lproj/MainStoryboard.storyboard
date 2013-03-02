@@ -9,7 +9,7 @@
             <objects>
                 <viewController id="2" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3">
-                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UfK-Yk-8VB">
@@ -25,12 +25,20 @@
                                     <action selector="buttonClicked:" destination="2" eventType="touchUpInside" id="plT-S1-6xx"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="the label is to show up in the trunk after merging" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PVP-NS-ffx">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="UfK-Yk-8VB" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="7xh-RW-kAX"/>
-                            <constraint firstItem="UfK-Yk-8VB" firstAttribute="top" secondItem="3" secondAttribute="top" constant="210" id="ebd-Hg-FQr"/>
+                            <constraint firstItem="PVP-NS-ffx" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="ajs-WM-vIC"/>
                             <constraint firstAttribute="trailing" secondItem="UfK-Yk-8VB" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="esK-vg-4X1"/>
+                            <constraint firstAttribute="bottom" secondItem="UfK-Yk-8VB" secondAttribute="bottom" constant="178" id="fQw-pQ-mLN"/>
+                            <constraint firstItem="PVP-NS-ffx" firstAttribute="top" secondItem="3" secondAttribute="top" constant="177" id="oMX-eS-xEu"/>
+                            <constraint firstAttribute="trailing" secondItem="PVP-NS-ffx" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="r0y-7A-MH6"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -52,6 +60,6 @@
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination" type="retina4"/>
+        <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
 </document>
